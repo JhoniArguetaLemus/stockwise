@@ -1,0 +1,16 @@
+
+
+#hero{
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url("https://images.klipfolio.com/website/public/8c382128-c51b-456d-b0f2-45659d2424db/supply-chain-dashboard-example.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+}
