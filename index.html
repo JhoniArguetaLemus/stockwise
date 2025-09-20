@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StockWise - Software de Inventarios</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -31,10 +32,10 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="bg-cover bg-center h-screen flex items-center justify-center relative mt-[3rem]" >
+    <section data-aos="fade-right" id="hero" class="bg-cover bg-center h-screen flex items-center justify-center relative mt-[3rem]" >
        
         <div class="relative z-10 text-center text-white p-12">
-            <h1 class="text-4xl font-bold mb-4">Gestiona tu inventario en tiempo real con StockWise</h1>
+            <h1 class="text-4xl font-bold mb-4" id="typing-text2"></h1>
             <p class="text-lg mb-6">Software intuitivo para pequeñas y medianas empresas que elimina descuadres, optimiza compras y ahorra tiempo.</p>
             <a href="#contacto" class="bg-green-600 hover:bg-green-700 text-white py-2 px-6 rounded-lg">Solicita una demo</a>
         </div>
@@ -46,33 +47,34 @@
             <h2 class="text-3xl font-semibold mb-10">Funcionalidades Clave</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div data-aos="flip-left" data-aos-duration="2000" class="bg-white p-6 rounded-lg shadow-lg">
                     <img src="images/stock.webp" alt="" class="rounded-lg mb-[2rem]">
                     <h3 class="text-xl font-semibold mb-4">Control de Stock en Tiempo Real</h3>
                     <p>Registra entradas, salidas y ajustes de manera automática y visualiza la disponibilidad de tus productos al instante.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div data-aos="flip-left" data-aos-duration="2000" class="bg-white p-6 rounded-lg shadow-lg">
                     <img src="images/qr.jpg" alt="" class="rounded-lg mb-[2rem]">
                     <h3 class="text-xl font-semibold mb-4">Escaneo de Códigos de Barra/QR</h3>
                     <p>Elimina errores humanos utilizando tu smartphone para registrar productos rápida y fácilmente.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <div data-aos="flip-left" data-aos-duration="2000" class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
                      <img src="images/alerta.png" alt="" class="rounded-lg mb-[2rem] " width="200">
                     <h3 class="text-xl font-semibold mb-4">Alertas de Stock Mínimo</h3>
                     <p>Recibe notificaciones automáticas cuando un producto llega a nivel bajo, evitando quedarse sin existencias.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center flex-col">
+
+                <div data-aos="zoom-in" data-aos-duration="2000" class="bg-white p-6 rounded-lg shadow-lg flex items-center flex-col">
                      <img src="images/reportes.png" alt="" class="rounded-lg mb-[2rem] " width="200">
                     <h3 class="text-xl font-semibold mb-4">Reportes de Rotación</h3>
                     <p>Identifica productos estrella y productos de baja rotación para tomar decisiones inteligentes de compra.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
                      <img src="images/mulibodega.png" alt="" class="rounded-lg mb-[2rem] " width="200">
                     <h3 class="text-xl font-semibold mb-4">Soporte Multi-bodega</h3>
                     <p>Gestiona inventarios de varias sucursales desde un solo panel centralizado.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
                     <img src="images/interfaz.png" alt="" class="rounded-lg mb-[2rem] " width="200">
                     <h3 class="text-xl font-semibold mb-4">Interfaz Intuitiva</h3>
                     <p>Diseño simple y amigable que cualquier miembro de tu equipo puede usar sin capacitación extensa.</p>
@@ -84,14 +86,15 @@
     <!-- Testimonios Section -->
     <section id="testimonios" class="py-20 bg-green-600 text-white">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-10">Opiniones de Nuestros Clientes</h2>
+            <h2 id="typing-text" class="text-3xl font-semibold mb-10"></h2>
             <div class="flex flex-wrap justify-center gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs text-gray-800">
+
+                <div data-aos="zoom-in-down" data-aos-duration="2000" class="bg-white p-6 rounded-lg shadow-lg max-w-xs text-gray-800">
                     <p class="italic mb-4">"StockWise eliminó los descuadres en nuestro inventario y ahora puedo confiar en los números en tiempo real. Ya no pierdo ventas por falta de stock."</p>
                     <p class="font-semibold">Javier Campos</p>
                     <p>Dueño de distribuidora</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs text-gray-800">
+                <div data-aos="zoom-in-down" data-aos-duration="2000" class="bg-white p-6 rounded-lg shadow-lg max-w-xs text-gray-800">
                     <p class="italic mb-4">"La función de escaneo de códigos y alertas mínimas nos permite mantener siempre nuestros productos clave disponibles, ahorrando dinero y tiempo."</p>
                     <p class="font-semibold">María López</p>
                     <p>Gerente de Inventario</p>
@@ -128,9 +131,14 @@
     </footer>
 
     <!-- JS -->
-    <script>
+    <script src="js/app.js">
         // Aquí puedes agregar funcionalidad JS si quieres validar o enviar el formulario
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init();
+  </script>
 
 </body>
 </html>
